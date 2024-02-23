@@ -1,0 +1,14 @@
+<h2>Appartements List</h2>
+<input type="number" placeholder="Surface minimum">
+<button>Rechercher</button>
+<ul>
+    <li *ngFor="let appartement of listApartments">
+        {{ appartement.appartNum }} <button [routerLink]="['details',appartement.appartNum]">Show Details</button>
+        <button (click)="showFavoris()">Click Me</button>
+    </li> 
+
+</ul>
+
+
+<h2>{{msg}}</h2>
+<router-outlet></router-outlet>
