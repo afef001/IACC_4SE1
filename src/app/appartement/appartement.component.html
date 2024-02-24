@@ -4,7 +4,7 @@
 <ul>
     <li *ngFor="let appartement of listApartments">
         {{ appartement.appartNum }} <button [routerLink]="['details',appartement.appartNum]">Show Details</button>
-        <button (click)="showFavoris()">Click Me</button>
+        <button (click)="showFavoris()">Add Favoris</button>
     </li> 
 
 </ul>
